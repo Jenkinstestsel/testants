@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="sceanrios_TCs.TestListener"/>
+  </listeners>
+  <test name="chromeTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="sceanrios_TCs.Login_Scenario">
+        <methods>
+          <include name="valid_login" invocation-numbers="0"/>
+          <include name="Initialize_browser"/>
+          <include name="tear_down"/>
+        </methods>
+      </class> <!-- sceanrios_TCs.Login_Scenario -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
