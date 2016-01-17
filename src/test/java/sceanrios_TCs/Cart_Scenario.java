@@ -31,7 +31,7 @@ public class Cart_Scenario extends Base_Class {
 		pom_home.WaitForimg_floodandfire(driver);
 //		getscreenshot(pom_home.img_floodandfire);
 		pom_home.click_img();
-		
+		System.out.println("hola");
 		System.out.println("item selected");
 		POM_Buynow pom_buy = new POM_Buynow(driver);
 		pom_buy.click_buynow();
